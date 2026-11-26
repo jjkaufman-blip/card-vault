@@ -17,9 +17,9 @@ An Android app for scanning, valuing and organizing a football card collection. 
 2. **PSA (optional, for slabs):** Sign in at psacard.com/publicapi and copy the access token into Settings.
 
 ## Installing
-Every push to `main` builds an APK through GitHub Actions. To install it:
-1. Go to **Actions → latest "Build APK" run → Artifacts** and download the `CardVault-N` zip.
-2. Unzip it and open the `.apk` on the phone. Allow "install unknown apps" for your browser or file manager if Android asks.
+Every push to `main` builds the app and publishes it at **Releases → latest**.
+1. On the phone, sign in to GitHub in the browser and open `github.com/jjkaufman-blip/card-vault/releases/latest`.
+2. Tap **ToddsCardVault.apk** and open the download. If Android asks, allow "install unknown apps" for the browser.
 
 The repo includes a fixed signing key (`app/debug.keystore`). Because of it, each new build installs over the old one and keeps the data. Don't uninstall the app unless you have a backup, because uninstalling deletes its data.
 
